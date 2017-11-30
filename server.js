@@ -6,6 +6,7 @@ app.set('view engine','hbs');
 app.use(express.static(__dirname+'/public/'));
 
 app.get('/', (req, res)=> {
+    console.log('Inside default request');
     res.send('Hello Express');
 });
 
